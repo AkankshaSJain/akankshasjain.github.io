@@ -7,11 +7,11 @@ import WorkExperience from "./components/WorkExperience";
 import "./App.css";
 import { Link } from "react-router-dom";
 import { Row, Col, Image, Button } from "react-bootstrap";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter, Route } from 'react-router-dom';
 
 function App() {
   return (
-  	<Router>
+  	<HashRouter>
   		<div>
   		<Route exact path="/" component={Home} />
   		<Route path="/aboutme" component={AboutMe} />
@@ -19,7 +19,7 @@ function App() {
   		<Route path="/workexperience" component={WorkExperience} />
   		<Route path="/contactme" component={ContactMe} />
   		</div>
-  	</Router>
+  	</HashRouter>
   )
 }
 
